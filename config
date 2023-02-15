@@ -16,11 +16,12 @@ set $term alacritty
 set $menu bemenu-run | wmenu | xargs swaymsg exec --
 # ACTUAL CONFIG
 mode "runapp" {
-     bindsym $mod+b exec firefox
-     bindsym $mod+t exec $term
-     bindsym $mod+e exec emacs
-     bindsym $mod+s exec steam
-     bindsym $mod+p exec ~/Repositories/password-manager/main.sh
+     # Using alt because ctrl keycap is missing.
+     bindsym $mod+Alt+b exec firefox
+     bindsym $mod+Alt+t exec $term
+     bindsym $mod+Alt+e exec emacs
+     bindsym $mod+Alt+s exec steam
+     bindsym $mod+Alt+p exec ~/Repositories/password-manager/main.sh
      bindsym $mod+Escape mode "default"
      bindsym $mod+Return mode "default"
      bindsym $mod+$left focus left
@@ -36,6 +37,7 @@ mode "runapp" {
      bindsym $mod+Shift+q kill
 }
 bindsym $mod+r mode "runapp"
+bindsym $mod+p exec ~/Repositories/password-manager/main.sh
 #NOTE Per device outputting is allowed swaymsg -t get_outputs to list outputs
 bindsym $mod+Shift+q kill
 bindsym $mod+d exec $menu
