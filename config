@@ -16,13 +16,13 @@ set $term alacritty
 set $menu bemenu-run | wmenu | xargs swaymsg exec --
 # ACTUAL CONFIG
 mode "runapp" {
-     bindsym b exec firefox
-     bindsym t exec $term
-     bindsym e exec emacs
-     bindsym s exec steam
-     bindsym p exec ~/Repositories/password-manager/main.sh
-     bindsym Escape mode "default"
-     bindsym Return mode "default"
+     bindsym $mod+b exec firefox
+     bindsym $mod+t exec $term
+     bindsym $mod+e exec emacs
+     bindsym $mod+s exec steam
+     bindsym $mod+p exec ~/Repositories/password-manager/main.sh
+     bindsym $mod+Escape mode "default"
+     bindsym $mod+Return mode "default"
      bindsym $mod+$left focus left
      bindsym $mod+$right focus right
      bindsym $mod+$up focus up
