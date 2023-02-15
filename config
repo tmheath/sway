@@ -37,7 +37,7 @@ mode "runapp" {
      bindsym $mod+Shift+q kill
 }
 bindsym $mod+r mode "runapp"
-bindsym $mod+p exec ~/Repositories/password-manager/main.sh
+bindsym $mod+Alt+p exec ~/Repositories/password-manager/main.sh
 #NOTE Per device outputting is allowed swaymsg -t get_outputs to list outputs
 bindsym $mod+Shift+q kill
 bindsym $mod+d exec $menu
